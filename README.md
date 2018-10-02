@@ -63,10 +63,11 @@ First we need ```wget``` so:
 
 ```sudo apt-get install wget``` and then:
 
-```wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" \
-  | sh -s - --admin --no-path```
+```
+wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" \
+  | sh -s - --admin --no-path
+```
 
-``````
 
 Add the install location to the path to enable us to use ```pdflatex``` from anywhere in the terminal:
 
@@ -102,9 +103,10 @@ I like the hybrid material colour scheme so let's set that up and a few other th
 
 Let's install VimPlug:
 
-```curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim``
-``````
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
 
 Then create .vimrc file:
 

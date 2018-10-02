@@ -45,7 +45,7 @@ Let's install the packages we need in one command:
 
 This will take a while (...an hour or so) as there is a lot to compile.
 
-Not bad, just three packages from my normal set don't work:
+Not bad, just three packages from my normal setup don't work:
 
 - prophet
 - arules
@@ -93,7 +93,7 @@ And ```pandoc --version``` confirms that the version is 1.17.2.
 
 ### Zathura
 
-It's a bit of a pain having to flip back and forth to a browser to view compiled pdfs.  I prefer to use Zathura from the terminal, especially because it uses Vim key bindings.
+It's a bit of a pain having to flip back and forth to a browser to view compiled pdfs.  I prefer to use Zathura from the terminal or Vim, especially because it uses Vim key bindings.
 
 ```sudo apt-get install zathura```
 
@@ -103,7 +103,11 @@ I need to edit graphics so:
 
 ```sudo apt-get install gimp```
 
-### Libre Office?
+### Libre Office
+
+602 MB really just for Calc...
+
+```sudo apt-get install libreoffice```
 
 ## Fine tuning
 

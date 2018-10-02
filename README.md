@@ -41,11 +41,17 @@ Enter R as a superuser in interactive mode:
 
 Let's install the packages we need in one command:
 
-```install.packages(c("ggplot2","knitr","ggthemes","scales","ggmap","plotly","rstudioapi","ggfortify","leaflet","leaflet.extras","rgdal","forecast","prophet","treemapify","dbscan","survival","googleVis","rmarkdown","flexdashboard","highcharter","arules","devtools","tidyverse","maptools","treemap","networkD3","visNetwork","DiagrammeR","DT"))```
+```install.packages(c("ggplot2","knitr","ggthemes","scales","ggmap","plotly","ggfortify","leaflet","leaflet.extras","rgdal","forecast","treemapify","dbscan","survival","googleVis","rmarkdown","flexdashboard","highcharter","devtools","maptools","treemap","networkD3","visNetwork","DiagrammeR","DT"))```
 
-This will take a while (...hours) as there is a lot to compile.
+This will take a while (...an hour or so) as there is a lot to compile.
 
-To check
+Not bad, just three packages from my normal set don't work:
+
+- prophet
+- arules
+- tidyverse
+
+```q()``` to exit R
 
 ## Install LaTeX
 
@@ -53,9 +59,22 @@ A full install of LaTeX is very large so we will start with the smallest possibl
 
 Let's start with [TinyTex](https://yihui.name/tinytex/):
 
-```wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" | sh```
+First we need ```wget``` so:
 
-And then add the extra packages we need using ```tlmgr```:
+```sudo apt-get install wget``` and then:
+
+```wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" \
+  | sh -s - --admin --no-path```
+
+Add the install location to the path to enable us to use ```pdflatex``` from anywhere in the terminal:
+
+```sudo ~/.TinyTeX/bin/*/tlmgr path add```
+
+Now we have 4.7 GB left to play with.  The size of Linux is 3.5 GB.
+
+
+
+Now to add extra packages I need using ```tlmgr```:
 
 To do
 

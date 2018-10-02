@@ -75,9 +75,11 @@ Add the install location to the path to enable us to use ```pdflatex``` from any
 
 Now we have 4.7 GB left to play with.  The size of the Linux container is 3.5 GB.
 
-Now to add extra packages I need using ```tlmgr install```:
+Now to add the extra packages I need using ```tlmgr install```:
 
 ```tlmgr install subfiles isodate substr enumitem datatool xfor fp pdfpages csquotes microtype hyphenat xcolor fancyhdr lastpage fira mweights fontaxes wrapfig capt-of mdframed needspace tcolorbox pgf environ trimspaces titlesec titlecaps ifnextok floatrow placeins adjustbox collectbox lcg relsize lineno```
+
+These are very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary.
 
 Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... um that's weird but never mind!
 
@@ -85,7 +87,7 @@ Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB
 
 ### Pandoc
 
-A command line tool to convert between document types.  The version in Debian stretch is unfortunately very old.  As the C101 is an ARM chromebook we would need to compile the newer version which I think requires a (1GB +) Haskell install.  So in the meantime:
+A command line tool to convert between document types.  The version available in Debian stretch is unfortunately very old.  As the C101 is an ARM chromebook we would need to compile the newer version which I think requires a (1GB +) Haskell install.  We might actually have space to do this... but in the meantime:
 
 ```sudo apt-get install pandoc```
 
@@ -105,7 +107,7 @@ I need to edit graphics so:
 
 ### Libre Office
 
-602 MB really just for Calc...
+A 602 MB install really just so I have a reliable Excel alternative that I probably don't need...
 
 ```sudo apt-get install libreoffice```
 
@@ -125,6 +127,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 Then create .vimrc file:
 
 ```cd```
+```vim .vimrc```
+
+**Assuming you are comfortable with Vim**, edit the file using Vim:
+
 ```vim .vimrc```
 
 Add the following into the file:

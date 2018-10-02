@@ -108,7 +108,7 @@ I need to edit graphics so:
 
 ### Libre Office
 
-A 602 MB install really just so I have a reliable Excel alternative that I probably don't need...
+A 602 MB install really just so I have a reliable Excel alternative that I probably don't need anyway...
 
 ```sudo apt-get install libreoffice```
 
@@ -184,7 +184,7 @@ Add this to what the C101PA offers through ChromeOs and Android and we are very 
 
 ### RStudio
 
-I'd like to figure out if I can get an RStudio server running on the machine.  It would be great to be able to use RStudio through the Chromebook browser.
+I'd like to get an RStudio server running on the machine as itt would be great to be able to use RStudio through the Chromebook browser.  The issue is that RStudio isn't available for ARM processor.  It [looks like someone has had a crack at this](https://github.com/dashaub/ARM-RStudio) but I'm not brave enough to try it out just now.
 
 ### KeyNote
 
@@ -192,8 +192,8 @@ I love KeyNote on MacOS.  It's what made me start to use Macs and it's kept me u
 
 For a while I was interested enough by [reveal.js](https://revealjs.com/#/) to create my own templates and delivered a few presentations through it.  Unfortunately though it is too clunky to use and to share with others.
 
-KeyNote itself is still just a little too awkward to use in a browser.
+The web version of KeyNote itself is still just a little too awkward to use in a browser and in fact states that the browser in this Chromebook in unsupported.
 
 If Linux were to ever get a good KeyNote alternative I'd happily jump to a Linux enabled Chromebook.
 
-Until that happens though, I'd much rather travel with a £250 Chromebook than with a £1,000 Mac and this set up gets me 95% of the tools that I need.
+Until that happens though, I'd much rather travel with a £250 Chromebook than with a £1,000+ Mac and this set up gets me 95% of the tools that I need.

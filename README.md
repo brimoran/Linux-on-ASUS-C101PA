@@ -19,3 +19,18 @@ Run ```apt list --installed``` to see what we already have installed.  Most nota
 ## Install stuff that R packages need
 
 ```sudo apt-get install curl libcurl4-openssl-dev libxml2-dev libssl-dev libgdal-dev libproj-dev xorg libx11-dev libglu1-mesa-dev r-cran-rgl```
+
+```sudo apt-get update```
+
+```sudo apt-get install r-base```
+
+## Install useful R packages
+
+To do.
+
+## Install LaTeX
+
+A full install of LaTeX is very large so we will start with a small install and just add in the fonts and packages that I need.
+
+## Additional goodies
+

@@ -15,7 +15,7 @@ After creating the Linux container I have 7.1 GB available according to the File
 
 To see what we are dealing with here:
 
-``lsb_release -da``` It's Debian stretch 9.5.
+```lsb_release -da``` It's Debian stretch 9.5.
 
 Run ```apt list --installed``` to see what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and write text.
 

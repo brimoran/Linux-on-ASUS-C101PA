@@ -174,7 +174,7 @@ We now have a little machine with:
 - Gimp as a powerful graphics editor
 - Libre Office providing a full office suite
 
-Add this to what the C101pa offers through ChromeOs and Android and we are very close to having the perfect little machine for my needs... There are just two things missing:
+Add this to what the C101PA offers through ChromeOs and Android and we are very close to having the perfect little machine for my needs... There are just two things missing:
 
 ### RStudio
 
@@ -182,10 +182,12 @@ I'd like to figure out if I can get an RStudio server running on the machine.  I
 
 ### KeyNote
 
-I love KeyNote on MacOS.  It's what made me start to use macs and it's what has kept me using them.  No other presentation software comes close in my opinion.  For a while I was intrigued enough by reveal.js to create my own templates but it is unfortunately too clunky to use and to share with others.
+I love KeyNote on MacOS.  It's what made me start to use Macs and it's kept me using them.  No other presentation software comes close in my opinion.
 
-KeyNote itself is still just a little too clunky to use in a browser.
+For a while I was interested enough by [reveal.js](https://revealjs.com/#/) to create my own templates and delivered a few presentations through it.  Unfortunately though it is too clunky to use and to share with others.
 
-If Linux were to ever get a KeyNote competitor I think I'd fully jump to a Linux enabled Chromebook.
+KeyNote itself is still just a little too awkward to use in a browser.
 
-Until that happens though, I'd much rather travel with a Chromebook than with a Mac and this set up gets me 90% of what I need.
+If Linux were to ever get a good KeyNote alternative I'd happily jump to a Linux enabled Chromebook.
+
+Until that happens though, I'd much rather travel with a £250 Chromebook than with a £1,000 Mac and this set up gets me 95% of the tools that I need.

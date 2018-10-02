@@ -3,15 +3,15 @@ Setting up Linux on a dinky Chromebook.
 
 ## Aims
 
-The Asus C101PA is a highly portable 10.1 inch Chromebook that is ideal to take on trips.
+The Asus C101PA is a highly portable 10.1 inch Chromebook that is ideal to take on trips: I love its form factor, battery life, the built in security of ChromeOS and low cost of replacement.
 
-I love the form factor of this machine but unfortunately the hard drive is only 16 GB so space is at a premium.  We will therefore have to be very careful about what we install.
+With Crostini moving into the stable ChromeOS channel we have an opportunity to add some Linux programmes to boost the usefulness of the C101PA.  Unfortunately the hard drive is only 16 GB so space is at a premium.  We will therefore have to be very careful about what we install.
 
-My minimal needs are to have working installs of R and LaTeX to enable me to finish off charts and documents on the go... but we'll see what else we can get away with.
+My minimal needs are to have a text editor and working installs of R and LaTeX to enable me to finish off charts and documents on the go... but we'll see what else we can get away with.
 
 ## What comes with the standard Linux container?
 
-After creating the Linux container I have 7.1 GB of free space available according to the Files app.
+After creating the Linux container I have 7.1 GB of free space available across the whole machine according to the Files app.
 
 To see what we are dealing with here:
 
@@ -21,7 +21,7 @@ It's Debian stretch 9.5.
 
 ```apt list --installed```
 
-will show us what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and for **all** my text editing - with Python installed arguably I don't really need R but my knowledge of R is much better... so...
+will show us what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'm very happy to use Vim to edit code and for **all** my text editing - with Python installed, arguably I don't really need R but my knowledge of R is much better... so...
 
 ## Install stuff that R packages need
 
@@ -57,9 +57,9 @@ To be honest tidyverse is the main loss here.
 
 ## Install LaTeX
 
-A full install of LaTeX is very large (c. 5 GB!) so we will start with the smallest possible install and then add in the fonts and packages needed.
+A full install of LaTeX is very large (c. 5 GB!) so we will start with the smallest possible install and then add in the specific additional fonts and packages needed.
 
-Thankfully we can start with [TinyTex](https://yihui.name/tinytex/) and then add to its teeny weeny install:
+Thankfully these days we can start with [TinyTex](https://yihui.name/tinytex/) and then add to its teeny weeny install:
 
 First we need ```wget``` so:
 
@@ -80,7 +80,7 @@ Now to add the extra packages I need using ```tlmgr install```:
 
 ```tlmgr install subfiles isodate substr enumitem datatool xfor fp pdfpages csquotes microtype hyphenat xcolor fancyhdr lastpage fira mweights fontaxes wrapfig capt-of mdframed needspace tcolorbox pgf environ trimspaces titlesec titlecaps ifnextok floatrow placeins adjustbox collectbox lcg relsize lineno```
 
-These are very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary - try to compile your .tex files and install the .sty files that are missing through ```tlmgr install```.
+These are the very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary - try to compile your .tex files and install the .sty files that the error messages tell you are missing through ```tlmgr install```.
 
 Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... not sure why the overall space has stayed the same... TinyTex clearly does an excellent job of staying tiny!
 
@@ -88,7 +88,7 @@ Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB
 
 ### Pandoc
 
-A command line tool to convert between document types.  The version available in Debian stretch is unfortunately very old.  As the C101 is an ARM chromebook we would need to compile the newer version which requires a (1GB +) Haskell install.  We might actually have space to do this... but in the meantime we'll make do with the older version:
+A command line tool to convert between document types.  The version available in Debian stretch is unfortunately very old.  As the C101PA is an ARM Chromebook we would need to compile the newer version which requires a (1GB +) Haskell install.  We might actually have space to do this... I'll probably try it later, but in the meantime we'll make do with the older version:
 
 ```sudo apt-get install pandoc```
 
@@ -108,17 +108,17 @@ I need to edit graphics so:
 
 ### Libre Office
 
-A 602 MB install really just so I have a reliable Excel alternative that I probably don't need anyway...
+A large 602 MB install really just so I have a reliable Excel alternative that I probably don't need anyway...
 
 ```sudo apt-get install libreoffice```
 
 ### SQLite
 
-Occassionally I might have a need to manipulate stuff in SQL so:
+Occassionally I might have a need to create small databases and to manipulate stuff in SQL so:
 
 ```sudo apt-get install sqlite3 libsqlite3-dev```
 
-And some software to help:
+And some software to help with this:
 
 ```sudo apt-get install sqlitebrowser```
 
@@ -176,28 +176,28 @@ Let Vim do its stuff.
 
 We now have a little machine with:
 
-- Vim for document writing and scripting
+- Vim for writing documents and scripting
 - R for analysis and producing top notch charts
-- LaTeX to create beautiful documents
+- LaTeX to create beautiful documents and HTML dashboards
 - Pandoc to convert between document types
 - Zathura as a light weight pdf viewer
 - Gimp as a powerful graphics editor
 - Libre Office providing a full office suite
 
-Add this to what the C101PA offers through ChromeOs and Android and we are very close to having the perfect little machine for my needs... There are just two things missing:
+Add to this all that the C101PA already offers through ChromeOs and Android and we are very close to having the perfect little machine for my needs... There are just two things missing:
 
 ### RStudio
 
-I'd like to get an RStudio server running on the machine as itt would be great to be able to use RStudio through the Chromebook browser.  The issue is that RStudio isn't available for ARM processor.  It [looks like someone has had a crack at this](https://github.com/dashaub/ARM-RStudio) but I'm not brave enough to try it out just now.
+I'd like to get an RStudio server running on the machine as it would be great to be able to use RStudio through the Chromebook browser.  The issue is that RStudio isn't available for ARM processors.  It [looks like someone has had a crack at this](https://github.com/dashaub/ARM-RStudio) but I'm not brave enough to try it out just now.
 
 ### KeyNote
 
 I love KeyNote on MacOS.  It's what made me start to use Macs and it's kept me using them.  No other presentation software comes close in my opinion.
 
-For a while I was interested enough by [reveal.js](https://revealjs.com/#/) to create my own templates and delivered a few presentations through it.  Unfortunately though it is too clunky to use and to share with others.
+For a while I was interested enough by [reveal.js](https://revealjs.com/#/) to create my own templates and delivered a few presentations through it.  Unfortunately though it is a bit clunky to use and to share with others.  You can't collaborate with anyone unless they know a bit of HTML and most the people I collaborate with on presentations don't.
 
-The web version of KeyNote itself is still just a little too awkward to use in a browser and in fact states that the browser in this Chromebook in unsupported.
+The web version of KeyNote itself is still just a little too awkward to use in a browser and in fact the service states that the browser in this Chromebook is in fact unsupported.
 
-If Linux were to ever get a good KeyNote alternative I'd happily jump to a Linux enabled Chromebook.
+If Linux were to ever get a good KeyNote alternative I'd happily jump to a Linux enabled Chromebook as my daily driver.
 
 Until that happens though, I'd much rather travel with a £250 Chromebook than with a £1,000+ Mac and this set up gets me 95% of the tools that I need.

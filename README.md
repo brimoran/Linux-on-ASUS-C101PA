@@ -63,14 +63,13 @@ First we need ```wget``` so:
 
 ```sudo apt-get install wget``` and then:
 
-```wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" \
-  | sh -s - --admin --no-path```
+```wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" \ | sh -s - --admin --no-path```
 
 Add the install location to the path to enable us to use ```pdflatex``` from anywhere in the terminal:
 
 ```sudo ~/.TinyTeX/bin/*/tlmgr path add```
 
-Now we have 4.7 GB left to play with.  The size of Linux is 3.5 GB.
+Now we have 4.7 GB left to play with.  The size of the Linux container is 3.5 GB.
 
 
 

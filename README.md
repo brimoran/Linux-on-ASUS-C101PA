@@ -15,10 +15,13 @@ After creating the Linux container I have 7.1 GB available according to the File
 
 To see what we are dealing with here:
 
-```lsb_release -da``` It's Debian stretch 9.5.
+```lsb_release -da```
 
-Run ```apt list --installed``` to see what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and write text.
+It's Debian stretch 9.5.
 
+```apt list --installed```
+
+will show us what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and write text.
 
 ## Install stuff that R packages need
 
@@ -33,9 +36,11 @@ I now have 5.5 GB available, with Linux comprising 2.9 GB.
 
 ## Install useful R packages
 
+Enter R as a superuser in interactive mode:
+
 ```sudo -i R```
 
-OK we are just going to go for it in one command:
+Let's install the packages we need in one command:
 
 ```install.packages(c("ggplot2","knitr","ggthemes","scales","ggmap","plotly","rstudioapi","ggfortify","leaflet","leaflet.extras","rgdal","forecast","prophet","treemapify","dbscan","survival","googleVis","rmarkdown","flexdashboard","highcharter","arules","devtools","tidyverse","maptools","treemap","networkD3","visNetwork","DiagrammeR","DT"))```
 

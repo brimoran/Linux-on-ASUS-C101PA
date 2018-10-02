@@ -114,7 +114,13 @@ A 602 MB install really just so I have a reliable Excel alternative that I proba
 
 ### SQLite
 
-To do
+Occassionally I might have a need to manipulate stuff in SQL so:
+
+```sudo apt-get install sqlite3 libsqlite3-dev```
+
+### Scores on the doors
+
+The additional software has taken our Linux install up nearly a whole GB to 4.7 GB but we still have 3.4 GB free.
 
 ## Fine tuning
 

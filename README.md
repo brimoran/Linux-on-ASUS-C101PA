@@ -21,7 +21,7 @@ It's Debian stretch 9.5.
 
 ```apt list --installed```
 
-will show us what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and all my text editing - with Python installed arguably I don't really need R but my knowledge of R is much better... so...
+will show us what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and for **all** my text editing - with Python installed arguably I don't really need R but my knowledge of R is much better... so...
 
 ## Install stuff that R packages need
 
@@ -45,7 +45,7 @@ Let's install the packages we need in one command:
 
 This will take a while (...an hour or so) as there is a lot to compile.
 
-Not bad, just three packages from my normal setup don't work:
+Not bad, just three packages from my normal setup don't work (excluded from the list above):
 
 - prophet
 - arules
@@ -59,7 +59,7 @@ To be honest tidyverse is the main loss here.
 
 A full install of LaTeX is very large (c. 5 GB!) so we will start with the smallest possible install and then add in the fonts and packages needed.
 
-Thankfully we can start with [TinyTex](https://yihui.name/tinytex/) and then add to its install:
+Thankfully we can start with [TinyTex](https://yihui.name/tinytex/) and then add to its teeny weeny install:
 
 First we need ```wget``` so:
 
@@ -80,7 +80,7 @@ Now to add the extra packages I need using ```tlmgr install```:
 
 ```tlmgr install subfiles isodate substr enumitem datatool xfor fp pdfpages csquotes microtype hyphenat xcolor fancyhdr lastpage fira mweights fontaxes wrapfig capt-of mdframed needspace tcolorbox pgf environ trimspaces titlesec titlecaps ifnextok floatrow placeins adjustbox collectbox lcg relsize lineno```
 
-These are very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary.
+These are very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary - try to compile your .tex files and install the .sty files that are missing through ```tlmgr install```.
 
 Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... not sure why the overall space has stayed the same... TinyTex clearly does an excellent job of staying tiny!
 
@@ -118,9 +118,13 @@ Occassionally I might have a need to manipulate stuff in SQL so:
 
 ```sudo apt-get install sqlite3 libsqlite3-dev```
 
+And some software to help:
+
+```sudo apt-get install sqlitebrowser```
+
 ## Scores on the doors
 
-The additional software has taken our Linux install up nearly a whole GB to 4.7 GB but we still have 3.4 GB free.
+The additional software has taken our Linux install up nearly a whole GB to 4.7 GB mostly thanks to Libre Office but we still have 3.4 GB free.
 
 ## Fine tuning
 

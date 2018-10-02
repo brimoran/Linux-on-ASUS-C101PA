@@ -71,11 +71,11 @@ Add the install location to the path to enable us to use ```pdflatex``` from any
 
 Now we have 4.7 GB left to play with.  The size of the Linux container is 3.5 GB.
 
+Now to add extra packages I need using ```tlmgr install```:
 
+```tlmgr install subfiles isodate substr enumitem datatool xfor fp pdfpages csquotes microtype hyphenat xcolor fancyhdr lastpage fira mweights fontaxes wrapfig capt-of mdframed needspace tcolorbox pgf environ trimspaces titlesec titlecaps ifnextok floatrow placeins adjustbox collectbox lcg relsize lineno```
 
-Now to add extra packages I need using ```tlmgr```:
-
-To do
+Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... um that's weird but never mind!
 
 ## Additional goodies
 

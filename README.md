@@ -3,15 +3,15 @@ Setting up Linux on a dinky Chromebook.
 
 ## Aims
 
-The Asus C101PA ia a highly portable 10.1 inch Chromebook that is ideal to take on trips.
+The Asus C101PA is a highly portable 10.1 inch Chromebook that is ideal to take on trips.
 
 I love the form factor of this machine but unfortunately the hard drive is only 16 GB so space is at a premium.  We will therefore have to be very careful about what we install.
 
-My minimal needs are to have working installs of R and LaTeX to enable me to finish off documents on the go... but we'll see what else we can get away with.
+My minimal needs are to have working installs of R and LaTeX to enable me to finish off charts and documents on the go... but we'll see what else we can get away with.
 
 ## What comes with the standard Linux container?
 
-After creating the Linux container I have 7.1 GB available according to the Files app.
+After creating the Linux container I have 7.1 GB of free space available according to the Files app.
 
 To see what we are dealing with here:
 
@@ -21,7 +21,7 @@ It's Debian stretch 9.5.
 
 ```apt list --installed```
 
-will show us what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and all my text editing.
+will show us what we already have installed.  Most notably (for me) we already have Vim and Python 3.  I'll be using Vim to edit code and all my text editing - with Python installed arguably I don't really need R but my knowledge of R is much better... so...
 
 ## Install stuff that R packages need
 
@@ -51,13 +51,15 @@ Not bad, just three packages from my normal setup don't work:
 - arules
 - tidyverse
 
+To be honest tidyverse is the main loss here.
+
 ```q()``` to exit R
 
 ## Install LaTeX
 
-A full install of LaTeX is very large so we will start with the smallest possible install and then add in the fonts and packages needed.
+A full install of LaTeX is very large (c. 5 GB!) so we will start with the smallest possible install and then add in the fonts and packages needed.
 
-Let's start with [TinyTex](https://yihui.name/tinytex/):
+Thankfully we can start with [TinyTex](https://yihui.name/tinytex/) and then add to its install:
 
 First we need ```wget``` so:
 
@@ -67,7 +69,6 @@ First we need ```wget``` so:
 wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" \
   | sh -s - --admin --no-path
 ```
-
 
 Add the install location to the path to enable us to use ```pdflatex``` from anywhere in the terminal:
 
@@ -81,13 +82,13 @@ Now to add the extra packages I need using ```tlmgr install```:
 
 These are very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary.
 
-Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... um that's weird but never mind!
+Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... not sure why the overall space has stayed the same... TinyTex clearly does an excellent job of staying tiny!
 
 ## Additional goodies
 
 ### Pandoc
 
-A command line tool to convert between document types.  The version available in Debian stretch is unfortunately very old.  As the C101 is an ARM chromebook we would need to compile the newer version which I think requires a (1GB +) Haskell install.  We might actually have space to do this... but in the meantime:
+A command line tool to convert between document types.  The version available in Debian stretch is unfortunately very old.  As the C101 is an ARM chromebook we would need to compile the newer version which requires a (1GB +) Haskell install.  We might actually have space to do this... but in the meantime we'll make do with the older version:
 
 ```sudo apt-get install pandoc```
 
@@ -95,7 +96,7 @@ And ```pandoc --version``` confirms that the version is 1.17.2.
 
 ### Zathura
 
-It's a bit of a pain having to flip back and forth to a browser to view compiled pdfs.  I prefer to use Zathura from the terminal or Vim, especially because it uses Vim key bindings.
+It's a bit of a pain having to flip back and forth to a browser to view compiled pdfs.  I prefer to use Zathura from the terminal or from Vim, especially because it uses Vim key bindings.
 
 ```sudo apt-get install zathura```
 
@@ -110,6 +111,10 @@ I need to edit graphics so:
 A 602 MB install really just so I have a reliable Excel alternative that I probably don't need...
 
 ```sudo apt-get install libreoffice```
+
+### SQLite
+
+To do
 
 ## Fine tuning
 
@@ -156,3 +161,31 @@ And then from within Vim type:
 ```:PlugInstall```
 
 Let Vim do its stuff.
+
+## Concluding thoughts
+
+We now have a little machine with:
+
+- Vim for document writing and scripting
+- R for analysis and producing top notch charts
+- LaTeX to create beautiful documents
+- Pandoc to convert between document types
+- Zathura as a light weight pdf viewer
+- Gimp as a powerful graphics editor
+- Libre Office providing a full office suite
+
+Add this to what the C101pa offers through ChromeOs and Android and we are very close to having the perfect little machine for my needs... There are just two things missing:
+
+### RStudio
+
+I'd like to figure out if I can get an RStudio server running on the machine.  It would be great to be able to use RStudio through the Chromebook browser.
+
+### KeyNote
+
+I love KeyNote on MacOS.  It's what made me start to use macs and it's what has kept me using them.  No other presentation software comes close in my opinion.  For a while I was intrigued enough by reveal.js to create my own templates but it is unfortunately too clunky to use and to share with others.
+
+KeyNote itself is still just a little too clunky to use in a browser.
+
+If Linux were to ever get a KeyNote competitor I think I'd fully jump to a Linux enabled Chromebook.
+
+Until that happens though, I'd much rather travel with a Chromebook than with a Mac and this set up gets me 90% of what I need.

@@ -52,7 +52,14 @@ To check
 
 A full install of LaTeX is very large so we will start with a small install and just add in the fonts and packages that I need.
 
+Let's start with [TinyTex](https://yihui.name/tinytex/):
+
+```wget -qO- "https://yihui.name/gh/tinytex/tools/install-unx.sh" | sh```
+
+And then add the extra packages we need using ```tlmgr```:
+
 To do
+
 ## Additional goodies
 
 To do

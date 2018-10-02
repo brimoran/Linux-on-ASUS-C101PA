@@ -83,6 +83,14 @@ Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB
 
 ## Additional goodies
 
+### Pandoc
+
+A command line tool to convert between document types.  The version in Debian stretch is unfortunately very old.  As the C101 is an ARM chromebook we would need to compile the newer version which I think requires a (1GB +) Haskell install.  So in the meantime:
+
+```sudo apt-get install pandoc```
+
+And ```pandoc --version``` confirms that the version is 1.17.2.
+
 ### Zathura
 
 It's a bit of a pain having to flip back and forth to a browser to view compiled pdfs.  I prefer to use Zathura from the terminal, especially because it uses Vim key bindings.
@@ -91,9 +99,11 @@ It's a bit of a pain having to flip back and forth to a browser to view compiled
 
 ### Gimp
 
+I need to edit graphics so:
+
 ```sudo apt-get install gimp```
 
-### Open Office
+### Libre Office?
 
 ## Fine tuning
 
@@ -135,5 +145,4 @@ And then from within Vim type:
 ```:source %``` and then
 ```:PlugInstall```
 
-Let Vim do its stuff
-
+Let Vim do its stuff.

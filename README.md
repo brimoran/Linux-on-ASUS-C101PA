@@ -79,8 +79,18 @@ Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB
 
 ## Additional goodies
 
-To do
+### Zathura
 
-zathura
-gimp
-open office?
+It's a bit of a pain having to flip back and forth to a browser to view compiled pdfs.  I prefer to use Zathura from the terminal, especially because it uses Vim key bindings.
+
+```sudo apt-get install zathura```
+
+### Gimp
+
+```sudo apt-get install gimp```
+
+### Open Office
+
+## Fine tuning
+
+### Customising Vim

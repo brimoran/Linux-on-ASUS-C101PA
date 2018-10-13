@@ -1,7 +1,7 @@
 # Linux-on-ASUS-C101PA
 Setting up Linux on a dinky Chromebook.
 
-![](https://goo.gl/images/cC6Ud5)
+![](images/photo.jpeg)
 
 ## Aims
 

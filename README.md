@@ -13,6 +13,8 @@ My minimal needs are to have a text editor and working installs of R and LaTeX t
 
 After creating the Linux container I have 7.1 GB of free space available across the whole machine according to the Files app.
 
+So let's fire up the new Linux terminal app and get to work.
+
 To see what we are dealing with here:
 
 ```lsb_release -da```
@@ -80,7 +82,7 @@ Now to add the extra packages I need using ```tlmgr install```:
 
 ```tlmgr install subfiles isodate substr enumitem datatool xfor fp pdfpages csquotes microtype hyphenat xcolor fancyhdr lastpage fira mweights fontaxes wrapfig capt-of mdframed needspace tcolorbox pgf environ trimspaces titlesec titlecaps ifnextok floatrow placeins adjustbox collectbox lcg relsize lineno```
 
-These are the very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary - try to compile your .tex files and install the .sty files that the error messages tell you are missing through ```tlmgr install```.
+These are the very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary - try to compile your .tex files and install the .sty files that the error messages indicate are missing through ```tlmgr install```.
 
 Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... not sure why the overall space has stayed the same... TinyTex clearly does an excellent job of staying tiny!
 

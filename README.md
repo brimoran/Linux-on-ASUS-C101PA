@@ -98,6 +98,19 @@ And ```pandoc --version``` confirms that the version is 1.17.2.
 
 ### EPS2PGF
 
+A handy tool for converting .eps to .pgf which can easily be included in LaTeX without using ```\include{graphics}```.  This is handy when creating templates where you want to ensure a graphic - say a logo - is always present as intended.
+
+EPS2PGF requires Java version 1.5 but ```java -version``` tells us we have version 1.8.0_181 installed so we should be OK.
+
+So in regular ChromeOS head to https://sourceforge.net/projects/eps2pgf/files/latest/download and download.
+
+Mount the zip file, make an EPS2PGF folder on your Linux area and copy over using the Files app.  The command to use EPS2PGF is:
+
+```java -jar eps2pgf.jar input.eps -m directcopy -o output.pgf```
+
+At the minute this would need to be run from the EPS2PGF folder we just created.
+
+**Unfortunately I haven't managed to get this to work yet - the eps files I have tried result in PostScript errors.  I need to test with a known good eps file.**
 
 ### Zathura
 

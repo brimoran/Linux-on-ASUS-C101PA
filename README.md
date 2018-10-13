@@ -1,6 +1,8 @@
 # Linux-on-ASUS-C101PA
 Setting up Linux on a dinky Chromebook.
 
+![](https://goo.gl/images/cC6Ud5)
+
 ## Aims
 
 The Asus C101PA is a highly portable 10.1 inch Chromebook that is ideal to take on trips: I love its form factor, battery life, the built in security of ChromeOS and low cost of replacement.
@@ -110,7 +112,11 @@ Mount the zip file, make an EPS2PGF folder on your Linux area and copy over usin
 
 At the minute this would need to be run from the EPS2PGF folder we just created.
 
-**Unfortunately I haven't managed to get this to work yet - the eps files I have tried result in PostScript errors.  I need to test with a known good eps file.**
+### Ghostscript
+
+Ghostscript is already present in the Linux install but it's worth highlighting here as it is a really useful tool to shrink down pdf files and we need to keep space saved afterall:
+
+```gs -dSAFER -dBATCH -dNOPAUSE -dNOCACHE -sDEVICE=pdfwrite     -sColorConversionStrategy=/LeaveColorUnchanged      -dAutoFilterColorImages=true     -dAutoFilterGrayImages=true     -dDownsampleMonoImages=true     -dDownsampleGrayImages=true     -dDownsampleColorImages=true     -sOutputFile=document_flat.pdf orig.pdf```
 
 ### Zathura
 

@@ -3,6 +3,8 @@ Setting up Linux on a dinky Chromebook.
 
 ![](images/photo.jpeg)
 
+- [x] test
+
 ## Aims
 
 The Asus C101PA is a highly portable 10.1 inch Chromebook that is ideal to take on trips: I love its form factor, battery life, the built in security of ChromeOS and low cost of replacement.

@@ -1,6 +1,8 @@
 # Linux-on-ASUS-C101PA
 Setting up Linux on a dinky Chromebook.
 
+[](https://www.google.co.uk/imgres?imgurl=https%3A%2F%2Fliliputing.com%2Fwp-content%2Fuploads%2F2017%2F05%2Fc101.jpg&imgrefurl=https%3A%2F%2Fliliputing.com%2F2017%2F05%2Fasus-chromebook-flip-c101-updated-10-inch-convertible.html&docid=bYPHWaBe8Z36GM&tbnid=P4IVKORTRoiJcM%3A&vet=10ahUKEwiEgojszoPeAhVoIsAKHTsRChEQMwhbKAAwAA..i&w=680&h=528&bih=821&biw=1440&q=asus%20flip%20c101&ved=0ahUKEwiEgojszoPeAhVoIsAKHTsRChEQMwhbKAAwAA&iact=mrc&uact=8)
+
 ## Aims
 
 The Asus C101PA is a highly portable 10.1 inch Chromebook that is ideal to take on trips: I love its form factor, battery life, the built in security of ChromeOS and low cost of replacement.

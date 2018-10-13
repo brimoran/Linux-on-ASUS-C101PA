@@ -96,6 +96,9 @@ A command line tool to convert between document types.  The version available in
 
 And ```pandoc --version``` confirms that the version is 1.17.2.
 
+### EPS2PGF
+
+
 ### Zathura
 
 It's a bit of a pain having to flip back and forth to a browser to view compiled pdfs.  I prefer to use Zathura from the terminal or from Vim, especially because it uses Vim key bindings.
@@ -107,6 +110,12 @@ It's a bit of a pain having to flip back and forth to a browser to view compiled
 I need to edit graphics so:
 
 ```sudo apt-get install gimp```
+
+### Inkscape
+
+For vector graphic work:
+
+```sudo apt-get install inkscape```
 
 ### Libre Office
 
@@ -179,11 +188,12 @@ Let Vim do its stuff.
 We now have a little machine with:
 
 - Vim for writing documents and scripting
-- R for analysis and producing top notch charts
-- LaTeX to create beautiful documents and HTML dashboards
+- R for analysis and to produce top notch charts and HTML dashboards
+- LaTeX to create beautiful PDF documents
 - Pandoc to convert between document types
-- Zathura as a light weight pdf viewer
+- Zathura as a light weight PDF viewer
 - Gimp as a powerful graphics editor
+- Inkscape for vector graphics
 - Libre Office providing a full office suite
 
 Add to this all that the C101PA already offers through ChromeOs and Android and we are very close to having the perfect little machine for my needs... There are just two things missing:

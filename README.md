@@ -110,9 +110,9 @@ Mount the zip file, make an EPS2PGF folder on your Linux area and copy over usin
 
 At the minute this would need to be run from the EPS2PGF folder we just created.
 
-### Ghost Script
+### Ghostscript
 
-Ghost Script is already present in the Linux install but it's worth highlighting here as it is a really useful tool to shrink down pdf files and space is at a premium for us:
+Ghostscript is already present in the Linux install but it's worth highlighting here as it is a really useful tool to shrink down pdf files and we need to keep space saved afterall:
 
 ```gs -dSAFER -dBATCH -dNOPAUSE -dNOCACHE -sDEVICE=pdfwrite     -sColorConversionStrategy=/LeaveColorUnchanged      -dAutoFilterColorImages=true     -dAutoFilterGrayImages=true     -dDownsampleMonoImages=true     -dDownsampleGrayImages=true     -dDownsampleColorImages=true     -sOutputFile=document_flat.pdf orig.pdf```
 

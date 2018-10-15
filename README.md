@@ -82,7 +82,7 @@ Now we have 4.7 GB left to play with.  The size of the Linux container is 3.5 GB
 
 Now to add the extra packages I need using ```tlmgr install```:
 
-```tlmgr install subfiles isodate substr enumitem datatool xfor fp pdfpages csquotes microtype hyphenat xcolor fancyhdr lastpage fira mweights fontaxes wrapfig capt-of mdframed needspace tcolorbox pgf environ trimspaces titlesec titlecaps ifnextok floatrow placeins adjustbox collectbox lcg relsize lineno```
+```tlmgr install subfiles isodate substr enumitem datatool xfor fp pdfpages csquotes microtype hyphenat xcolor fancyhdr lastpage fira mweights fontaxes wrapfig capt-of mdframed needspace tcolorbox pgf environ trimspaces titlesec titlecaps ifnextok floatrow placeins adjustbox collectbox lcg relsize lineno import```
 
 These are the very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary - try to compile your .tex files and install the .sty files that the error messages indicate are missing through ```tlmgr install```.
 

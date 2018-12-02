@@ -124,6 +124,12 @@ It's a bit of a pain having to flip back and forth to a browser to view compiled
 
 ```sudo apt-get install zathura```
 
+### Feh
+
+To launch an image viewer from the terminal:
+
+```sudo apt-get install feh```
+
 ### Gimp
 
 I need to edit graphics so:

@@ -182,7 +182,8 @@ git config --list
 Create SSH key:
 
 ```ls -al ~/.ssh
-# Lists the files in your .ssh directory, if they exist```
+# Lists the files in your .ssh directory, if they exist
+```
 
 If none exist:
 
@@ -200,6 +201,7 @@ Add SSH key to webservice and then clone repo using SSH in the area you want it 
 ```
 git clone git@gitlab.com:YOURGITUSERNAME/YOURREPO.git
 ```
+
 ### Customising Vim
 
 I like the hybrid material colour scheme so let's set that up and a few other things.

@@ -164,6 +164,42 @@ The additional software has taken our Linux install up nearly a whole GB to 4.7 
 
 ## Fine tuning
 
+### Git
+
+Set up git config:
+
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
+
+Confirm:
+
+```
+git config --list
+```
+
+Create SSH key:
+
+```ls -al ~/.ssh
+# Lists the files in your .ssh directory, if they exist```
+
+If none exist:
+
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+
+Show contents of public key to copy to add to web git service:
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+Add SSH key to webservice and then clone repo using SSH in the area you want it on your computer:
+
+```
+git clone git@gitlab.com:YOURGITUSERNAME/YOURREPO.git
+```
 ### Customising Vim
 
 I like the hybrid material colour scheme so let's set that up and a few other things.

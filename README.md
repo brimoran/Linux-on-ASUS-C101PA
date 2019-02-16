@@ -86,6 +86,8 @@ Now to add the extra packages I need using ```tlmgr install```:
 
 These are the very specific packages I need for the LaTeX templates I have created.  Your mileage **will** vary - try to compile your .tex files and install the .sty files that the error messages indicate are missing through ```tlmgr install```.
 
+**Note:** I have encountered occassional problems when adding additional packages in this way after the initial install --- specifically, packages may not be recognised as installed.  Running ```sudo mktexlsr``` sorts this out though.
+
 Now we have 4.7 GB left to play with.  The size of the Linux container is 3.6 GB... not sure why the overall space has stayed the same... TinyTex clearly does an excellent job of staying tiny!
 
 ## Additional goodies

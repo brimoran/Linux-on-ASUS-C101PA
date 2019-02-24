@@ -183,7 +183,8 @@ git config --list
 
 Create SSH key:
 
-```ls -al ~/.ssh
+```
+ls -al ~/.ssh
 # Lists the files in your .ssh directory, if they exist
 ```
 
